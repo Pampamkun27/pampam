@@ -41,7 +41,7 @@ client.on('messageCreate', async message => {
   // !join - Join voice channel
   if (message.content.toLowerCase() === '!join') {
     if (!message.member.voice.channel) {
-      return message.reply('Masuk ke voice dulu kamu ya!);
+      return message.reply('Masuk ke voice dulu kamu ya!');
     }
 
     try {
@@ -121,4 +121,5 @@ if (!token) {
   client.login(token);
 
 }
+
 
