@@ -70,7 +70,7 @@ client.on('messageCreate', async message => {
       
     } catch (error) {
       console.error('Join error:', error);
-      message.reply('❌ Failed to join voice channel!');
+      //message.reply('❌ Failed to join voice channel!');
     }
   }
 
@@ -119,4 +119,5 @@ if (!token) {
   console.log('💡 Go to Tools → Secrets and add DISCORD_TOKEN');
 } else {
   client.login(token);
+
 }
