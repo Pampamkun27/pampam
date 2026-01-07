@@ -41,7 +41,7 @@ client.on('messageCreate', async message => {
   // !join - Join voice channel
   if (message.content.toLowerCase() === '!join') {
     if (!message.member.voice.channel) {
-      return message.reply('❌ You need to be in a voice channel first!');
+      return message.reply('Masuk ke voice dulu kamu ya!);
     }
 
     try {
@@ -89,7 +89,7 @@ client.on('messageCreate', async message => {
   // !ping - Check if bot is alive
   if (message.content.toLowerCase() === '!ping') {
     const latency = Date.now() - message.createdTimestamp;
-    message.reply(`🏓 Pong! Latency: ${latency}ms | Voice: ${voiceConnection ? 'Connected 🔊' : 'Not connected 🔇'}`);
+    message.reply(`Mawas Asu!`);
   }
 });
 
@@ -121,3 +121,4 @@ if (!token) {
   client.login(token);
 
 }
+
