@@ -55,8 +55,8 @@ client.on('messageCreate', async message => {
         channelId: message.member.voice.channel.id,
         guildId: message.guild.id,
         adapterCreator: message.guild.voiceAdapterCreator,
-        selfDeaf: true, // Bot deafens itself (won't hear others)
-        selfMute: false // Bot can speak if needed
+        selfDeaf: false, // Bot deafens itself (won't hear others)
+        selfMute: true // Bot can speak if needed
       });
 
       // Wait for connection
@@ -121,5 +121,6 @@ if (!token) {
   client.login(token);
 
 }
+
 
 
